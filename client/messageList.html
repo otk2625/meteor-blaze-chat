@@ -1,0 +1,9 @@
+<template name="messageList">
+    <div class="panel-body">
+        <ul class="chat">
+            {{#each messages}}
+                <li>{{username}} : {{msg}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</template>

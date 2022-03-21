@@ -1,0 +1,32 @@
+<head>
+  <title>waggleChat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+  <!-- {{> chatMain}}
+  {{> chatRoom}} -->
+
+  {{> Template.dynamic template=currentMode}}
+</body>
+
+<template name="chatMain">
+
+  <div class="container">
+      <!-- loginButtons  -->
+      <p>{{> loginButtons}}</p>
+      <p>{{> createRoom}}</p>
+      <p>{{> roomList}}</p>
+  </div>
+
+</template>
+
+<template name="chatRoom">
+  <div class="panel">
+    <div class="panel">
+      {{> roomHeader}}
+      {{> messageList}}
+      {{> messageInput}}
+    </div>
+  </div>
+</template>
